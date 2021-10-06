@@ -29,7 +29,7 @@ In order to build the model for predicting which products would go into backorde
 
 4. Exploratory Data Analysis - Performing univariate analysis to understand the distributions of numerical features & % representation of categories in categorical features, bi-variate analysis and statistical analysis to understand relationship between independent and dependent features & Multivariate analysis to check for multicollinearity, mapping dependent variable onto the relationship between 2 or more variables to understand importance of pairs of features in classification and removal of redundant features.
 
-5 Data Preparation - Splitting data into train and test samples and performing missing value treatment, outlier treatment through appropriate means, encoding of categorical features, undersampling of majority class as per observation of ratio of majority to minority classes seen in EDA.
+5. Data Preparation - Splitting data into train and test samples and performing missing value treatment, outlier treatment through appropriate means, encoding of categorical features, undersampling of majority class as per observation of ratio of majority to minority classes seen in EDA.
 
 6. Model Building - Create Several baseline models like Logistic regression, KNN, Decision tree, Bagging and boosting classification algorithms. Checking performance of models using F1 score due to slight but reduced imbalance. Checking model stability using cross validation and also checking response time (latency) of each model in seconds.
 
