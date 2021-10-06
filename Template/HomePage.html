@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="Static/css/Backorders.css">
+    <link rel="stylesheet" type='text/css' href="Static/css/Queries.css">
+    <link rel="stylesheet" type='text/css' href="Static/css/ionicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Backorder Prediction</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#hero"><img class = "logo" src="Static/css/backorderlogo.jpg" alt="BackOrders logo"></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class = "main-nav-link" href="#how">About Backorders</a></li>
+          <li><a class = "main-nav-link nav-cta" href="#predictor">Backorder Predictor</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+
+    <section class="section-hero" id="hero">
+      <div class="hero">
+
+      <div class="hero-text-box">
+        <h1 class="heading-primary">Don't be "Out of Stock". Be ready to serve Customers</h1>
+        <p class="hero-description">
+        Improve your inventory operations, reduce waiting time for your customers and stay ahead of the demand. Identify in-demand or popular products which could become backorders by using a Machine Learning algorithm powered by huge amount of data and incredible insights.</p>
+        <a href="#how" class="btn btn--outline margin-right-sm">More Info &darr;</a>
+        <a href="#predictor" class="btn btn--full">Identify Backorders</a>
+        </div>
+
+      <div class="hero-img-box">
+        <img class = "hero-img" src="Static/css/Picture3.png" alt="Image Unavailable">
+      </div>
+    </div>
+    </section>
+
+
+
+    <section class="section-how js--section-how" id="how">
+        <div class="container-heading">
+          <h2 class="heading-secondary large-margin">About Backorders</h2>
+        </div>
+
+        <div class="container">
+          <div class="how-description">
+            <p>A backorder is an order that appears out of stock when a customer visits an online store’s product page but is promised to ship once the item is available with the retailer or seller. It is a process to allow customers to shop products despite limited stock available in hand. When an order contains multiple items, and any object is a backordered item, the latter can’t be packed and shipped given the lack of inventory.</p>
+            <br>
+            <span class="subheading center-align">Looking into BackOrders is important as they can lead to</span>
+          </div>
+        </div>
+
+
+          <div class="container grid grid--2-cols">
+            <div class="why-text-box">
+              <p class="why-number">01</p>
+              <h3 class="heading-tertiary center-align">Inventory & Warehousing Issues</h3>
+              <p class= "step-description">A high sales volumes followed by a wave of cancellations can mean companies have to deal with excess inventory for their space. If products are perishable or easily damaged, they could get damaged or spoiled. Backorders can create significant space concerns if not managed well. E-commerce backorders also increase the need for space as companies try managed order fulfillment</p>
+            </div>
+
+            <div class="why-img-box">
+              <img class = "why-img" src="Static/css/Warehousing.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="container grid grid--2-cols">
+            <div class="why-img-box">
+              <img class = "why-img" src="Static/css/Debts.jpg" alt="">
+            </div>
+
+            <div class="why-text-box">
+              <p class="why-number">02</p>
+              <h3 class="heading-tertiary center-align">Risk of Debts</h3>
+              <p class="step-description">Though backorders lead to revenues, revenues can't be generated until the goods are delivered. Relying on sales from mounting backorders could cause huge risk of rising debts if a huge wave of order cancellations follow. Banking on backorder revenues put e-commerce companies in a risky position if they are not financially secure based on its in-stock products and orders they can fill. </p>
+            </div>
+          </div>
+
+          <div class="container grid grid--2-cols">
+
+            <div class="why-text-box">
+              <p class="why-number">03</p>
+              <h3 class="heading-tertiary center-align">Loss of Customers & Sales</h3>
+              <p class= "step-description">If customers see desired products on backorders, they may decide to cancel their orders or look somewhere else for a substitute product. Frequent backorders and long waiting time could also frustrate loyal customers, who may decide to try other companies' products, thus switching loyalties. On the whole, a company loses out on business by not providing products demanded by its customers.</p>
+            </div>
+
+            <div class="why-img-box">
+              <img class = "why-img" src="Static/css/unhappy-customer.jpg" alt="">
+            </div>
+          </div>
+
+    </section>
+
+
+
+
+
+
+    <section class="section-predictor js--section-predictor" id="predictor">
+      <div class="container-heading">
+        <h2 class="heading-secondary medium-margin">Backorder Predictor</h2>
+      </div>
+
+      <div class="container form-layout">
+        <form class="" action="{{url_for('Results')}}">
+        <span class="subheading center-align subheading-align">Answer the following questions related to your concerned product</span>
+
+      <div class="grid-questions">
+        <div class="predictor-question asterix">
+          <label for="forecast_6_month">What is the forecasted sales of the product for next 6 months</label>
+        </div>
+        <div class="predictor-input">
+          <input type="number" name="forecast_6_month" value="" placeholder="Enter answer in Amount" required>
+        </div>
+      </div>
+
+      <div class="grid-questions">
+        <div class="predictor-question asterix">
+          <label for="sales_prev_6_month">What was the sales of the product in the last 6 months</label>
+        </div>
+        <div class="predictor-input">
+          <input type="number" name="sales_prev_6_month" value="" placeholder="Enter answer in Amount"  required>
+        </div>
+      </div>
+
+      <div class="grid-questions">
+        <div class="predictor-question asterix">
+          <label for="past_6_month_perf">What was the average sales of the product in the last 6 months</label>
+        </div>
+        <div class="predictor-input">
+          <input type="number" name="past_6_month_perf" value="" placeholder="Enter answer in Amount" required>
+        </div>
+      </div>
+
+      <div class="grid-questions">
+        <div class="predictor-question asterix">
+          <label for="national_inv">What is the present inventory level for the product</label>
+        </div>
+        <div class="predictor-input">
+          <input type="number" name="national_inv" value="" placeholder="Enter answer in units" required>
+        </div>
+      </div>
+
+      <div class="grid-questions">
+        <div class="predictor-question asterix">
+          <label for="min_stock">What is the minimum level of stock suggested to hold ?</label>
+        </div>
+        <div class="predictor-input">
+          <input type="number" name="min_stock" value="" placeholder="Enter answer in units" required>
+        </div>
+      </div>
+
+      <div class="grid-questions">
+        <div class="predictor-question asterix">
+          <label for="in_transit">What is the stock level of the product that is currently in transit</label>
+        </div>
+        <div class="predictor-input">
+          <input type="number" name="in_transit" value="" placeholder="Enter answer in units" required>
+        </div>
+      </div>
+
+      <div class="grid-questions">
+        <div class="predictor-question asterix">
+          <label for="local_bo_qty">What is the current backorder quantity for the given product ?</label>
+        </div>
+        <div class="predictor-input">
+          <input type="number" name="local_bo_qty" value="" placeholder="Enter answer in units" required>
+        </div>
+      </div>
+
+      <div class="grid-questions">
+        <div class="predictor-question asterix">
+          <label for="lead">What is the lead time in days for the given product ? </label>
+        </div>
+        <div class="predictor-input">
+          <input type="number" name="lead" value="" placeholder="Enter answer in days" required>
+        </div>
+      </div>
+
+      <div class="grid-questions">
+        <div class="predictor-question">
+          <label for="deck_risk">Is there any risk associated with storage of the product in cargo during transportation like theft, spoilage ? [deck risk - risk flag]</label>
+        </div>
+        <div class="predictor-select">
+          <select type="text" name="deck_risk"><option value="Yes">Yes</option><option value="No">No</option></select>
+        </div>
+      </div>
+
+      <div class="grid-questions">
+        <div class="predictor-question">
+          <label for="ppap_risk">Is there any risk associated with production process approval ? [ppap risk - risk flag]</label>
+        </div>
+        <div class="predictor-select">
+          <select type="text" name="ppap_risk"><option value="Yes">Yes</option><option value="No">No</option></select>
+        </div>
+      </div>
+
+      <div class= "container center-align">
+      <input class="submit-btn medium-margin" type="submit" name="submit_values" value="Click to Predict">
+      </div>
+    </form>
+  </div>
+  </section>
+    </main>
+
+    <footer>
+      <div class="row">
+      <p> <span>An iNeuron.ai Data Science Project by</span><br><a href="https://www.linkedin.com/in/varun-sagar-theegala/">Varun Sagar Theegala</a></p>
+    </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/jscript" src="Static/js/script.js"></script>
+    <script type="text/jscript" src="Static/js/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/src/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+  </body>
+</html>

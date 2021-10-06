@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="Static/css/Backorders.css">
+    <link rel="stylesheet" href="Static/css/Queries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Backorder Prediction: Result</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <img class = "logo" src="Static/css/backorderlogo.jpg" alt="BackOrders logo">
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class = "main-nav-link nav-cta alter-size" href="{{url_for('Index')}}">&larr; Back Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <section class = "section-pics">
+        <ul class = "pics-results group">
+        {% if result == "Not a Backorder" %}
+          <li>
+            <figure class = "result-image">
+              <img src="Static/css/Stocked_image.png" alt="">
+            </figure>
+          </li>
+          <li>
+            <figure class = "result-image">
+              <img src="Static/css/8-February-smiling-at-work.jpg" alt="">
+            </figure>
+          </li>
+          <li>
+            <figure class = "result-image">
+              <img src="Static/css/Delivery.png" alt="">
+            </figure>
+          </li>
+          <li>
+            <figure class = "result-image">
+              <img src="Static/css/Happy customer.jpg" alt="">
+            </figure>
+          </li>
+          {% else %}
+          <li>
+            <figure class = "result-image">
+              <img src="Static/css/inventory-planning.png" alt="">
+            </figure>
+          </li>
+          <li>
+            <figure class = "result-image">
+              <img src="Static/css/PlanningInventory.jpg" alt="">
+            </figure>
+          </li>
+          <li>
+            <figure class = "result-image">
+              <img src="Static/css/OutofStock2.png" alt="">
+            </figure>
+          </li>
+          <li>
+            <figure class = "result-image">
+              <img src="Static/css/unhappy-customers.jpg" alt="">
+            </figure>
+          </li>
+          {% endif %}
+        </ul>
+      </section>
+
+
+      <section class="section-results">
+          <div class="backorder-prediction-result">
+            <div class="row">
+              <h2>Product Evaluation Complete</h2>
+            </div>
+            <div class="row">
+              <p>The check is complete. Based on the history of the sales, forecasts and other product attributes supplied, the product is predicted to be</p>
+              <h1>{{result}}</h1>
+              {% if result == "Not a Backorder" %}
+              <p>You can conduct a detailed analysis to how to sell more units of the product or evaluate if there is a possibility to reduce some of its inventory in hand to accomodate for other potential in-demand products/backorders.</p>
+              {% else %}
+              <p>You need to start deciding on optimum methods to acquire required amount of inventory based on sales forecasts, plan for proper storage of inventory and most importantly, handling complaints and queries of unhappy customers.</p>
+              {% endif %}
+          </div>
+        </div>
+      </section>
+
+
+  </body>
+</html>
