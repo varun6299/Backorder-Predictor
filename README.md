@@ -1,6 +1,6 @@
 # Backorder-Predictor
 
-A Machine Learning Project completed as a part of the Data Science Project Internship with iNeuron.ai. 
+An end-to-end E-Commerce backorder solution created as a part of the Data Science Project Internship with iNeuron.ai. 
 
 ## About the Topic - Backorders in E-commerce setup
 A backorder is an item that is not in stock at the moment. The customer can still order it, but delivery will only happen once the stock has been replenished. This is different from a situation when a product is labeled as being “out-of-stock” on the web platform which means the customer can’t order the product. However, backorders can still be placed despite the product not being in stock at a given moment in time. However, this causes a lot of additional inventory costs and wait for the customers, which is undesirable.
