@@ -1,0 +1,319 @@
+
+/***********************************/
+/*********below 1344 px (smaller desktops) ********************/
+
+@media (max-width:84em) {
+  .hero{
+    max-width: 120rem;
+  }
+
+  .heading-primary{
+    font-size: 4.4rem;
+  }
+
+}
+
+/***********************************/
+/*********below 1200 px (landscape tablets) ********************/
+
+@media (max-width:75em) {
+  html{
+    font-size: 56.25%;
+  }
+
+  .grid{
+    column-gap: 4.8rem;
+    row-gap:6.4rem;
+  }
+
+  .heading-secondary{
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary{
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list{
+    gap:3.2rem;
+  }
+
+  .hero{
+    gap:4.8rem;
+  }
+
+}
+
+/***********************************/
+/*********below 944px (tablets) ********************/
+
+
+@media (max-width: 59em) {
+  html{
+    font-size: 50%;
+  }
+
+  .hero{
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box{
+    text-align: center;
+  }
+
+  .hero-img-box{
+    text-align: center;
+  }
+
+  .hero-img{
+    width: 80%;
+  }
+
+  .why-number{
+    font-size: 7.4rem;
+  }
+
+  .backorder-prediction-result{
+    font-size: 2.2rem;
+  }
+
+}
+
+/*********************Mobile landscape*********************/
+
+@media (max-width: 44em){
+  .grid--3-cols,.grid--4-cols{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .grid--2-cols{
+    margin-bottom: 4.8rem;
+  }
+
+  .heading-primary{
+    font-size: 4rem;
+  }
+
+  .heading-secondary{
+    font-size: 3.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .heading-tertiary{
+    font-size: 2rem;
+  }
+
+  .logo{
+    height: 7rem;
+    width: 18rem;
+  }
+
+  .main-nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited{
+    font-size: 1.4rem;
+  }
+
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited{
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 1rem 1rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #e67e22;
+  }
+
+  .why-number{
+    font-size: 5.4rem;
+  }
+
+  .why-img-box{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .why-img{
+    margin-top: 2rem;
+    margin-bottom: 2.4rem;
+    height: 100%;
+  }
+
+  .nav-col {
+    grid-row:1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+
+  .container.form-layout{
+    width: 80%;
+  }
+
+  input{
+    width: 25rem;
+  }
+
+  select{
+      width: 25rem;
+  }
+
+  .submit-btn{
+    width: 25rem;
+  }
+
+  .alter-size{
+    font-size: 1.6rem !important;
+    height: 3.6rem;
+    width: 16rem;
+  }
+
+  .increase-width{
+    width: 17rem !important;
+  }
+
+  .pics-results li{
+    display: block;
+    width: 50%;
+  }
+
+
+}
+
+/***************************Mobile******************/
+
+
+
+@media (max-width: 34em){
+
+  .grid{
+    row-gap: 4.8rem;
+  }
+  .grid--2-cols,.grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero{
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .logo{
+    height: 6.8rem;
+    width: 16rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited{
+    font-size: 1.2rem;
+  }
+
+
+  .main-nav-link.nav-cta:link,
+  .main-nav-link.nav-cta:visited{
+    font-size: 1.2rem;
+  }
+
+  .btn,.btn:link,.btn:visited{
+    padding: 2.4rem 1.2rem;
+  }
+
+  .hero-img{
+    width: 90%;
+  }
+
+  .why-img-box:nth-child(2){
+    grid-row: 1;
+  }
+
+  .why-img-box:nth-child(6){
+    grid-row: 5;
+  }
+
+  .why-img-box{
+    transform:translateY(2.4rem);
+    height: 25rem;
+  }
+
+
+  .section-predictor{
+    padding: 4.8rem 0 4.8rem 0;
+  }
+
+  .container.form-layout{
+    width: 85%;
+  }
+
+  .predictor-input{
+    font-size: 1rem;
+  }
+
+  input{
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+
+
+  select{
+    width: 20rem;
+    font-size: 1.2rem;
+  }
+
+  .submit-btn{
+    text-align: center;
+    font-size:1.5rem;
+    width: 20rem;
+  }
+
+  .alter-size{
+    font-size: 1.4rem !important;
+    height: 3.2rem;
+    width: 12rem;
+  }
+
+
+  .pics-results li{
+    display: block;
+    width: 50%;
+  }
+
+}
+
+@media (max-width:32em){
+
+  .btn,.btn:link,.btn:visited{
+    font-size: 1.6rem;
+  }
+
+  .alter-size{
+    font-size: 1.2rem !important;
+    height: 3.0rem;
+    width: 10rem;
+  }
+
+  .increase-width{
+    width: 10rem !important;
+  }
+
+  .pics-results li{
+    display: block;
+    width: 50%;
+  }
+
+
+}
