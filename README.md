@@ -47,4 +47,9 @@ In order to deploy the application on the web, the files were pushed to github. 
 
 
 ### Hosting Solution on the cloud - 
-In order to deploy the application on the web, AWS Ec2 instance was created usng Ubuntu as virtual machine. Also involved use of software like Putty, Puttygen and Winscp 
+In order to deploy the application on the web, AWS Ec2 instance was created usng Ubuntu as virtual machine. Also involved use of software like Putty, Puttygen and Winscp
+
+## Link to Website - 
+Click the following link to use app: 
+### https://backorder-predictor.herokuapp.com/
+
