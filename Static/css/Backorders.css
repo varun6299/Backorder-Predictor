@@ -369,7 +369,6 @@ select{
   height: 4rem;
   width: 30rem;
   border-radius: 4.5px;
-  text-align-last: center;
   text-align: -webkit-center;
   -moz-text-align-last: center;
 }
