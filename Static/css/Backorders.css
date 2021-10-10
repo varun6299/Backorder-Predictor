@@ -399,12 +399,11 @@ select{
   border: 1px solid #bbb;
   border-width: medium;
   font-family: Rubik;
-  color:#555;
+  color:red;
   font-weight: 600;
   height: 4rem;
   width: 30rem;
   border-radius: 4.5px;
-  text-align: center;
   text-align-last: center;
   -moz-text-align-last: center;
   -webkit-text-align-last: center;
@@ -420,7 +419,6 @@ input{
   height: 4rem;
   width: 30rem;
   border-radius: 4.5px;
-  text-align: center;
   text-align-last: center;
   -moz-text-align-last: center;
   -webkit-text-align-last: center;
