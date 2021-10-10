@@ -370,8 +370,8 @@ select{
   width: 30rem;
   border-radius: 4.5px;
   text-align-last: center;
+  text-align: -webkit-center;
   -moz-text-align-last: center;
-  -webkit-text-align-last: center;
 }
 
 input{
@@ -386,7 +386,6 @@ input{
   border-radius: 4.5px;
   text-align-last: center;
   -moz-text-align-last: center;
-  -webkit-text-align-last: center;
 }
 
 .asterix label::after{content: " * ";color:red;}
