@@ -1,39 +1,4 @@
 
-/* ----------------Typography------------------
-
-font size in px - 10,12,14,16,18,20,24,32,44,52,62,74,86
-
-font weight-
-default - 400
-medium - 500
-semi-bold - 600
-bold - 700
-
-line heights -
-default : 1
-small: 1.05
-paragraph default: 1.6
-
-*/
-
-/*-----------------Colors---------------------
-
-primary #e67e22
-tints #fae5d3 , #fdf239
-shades # cf711f
-accents
-greys
-#555
-#33
-Shadows-
-
-Border radius -
-
-default : 9px
-
-whitespace -
-
-- spacing system (px) 2/4/8/12/16/24/32/48/64/80/*/
 
 * {
   padding:0;
@@ -399,7 +364,7 @@ select{
   border: 1px solid #bbb;
   border-width: medium;
   font-family: Rubik;
-  color:red;
+  color:#555;
   font-weight: 600;
   height: 4rem;
   width: 30rem;
