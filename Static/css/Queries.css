@@ -78,10 +78,10 @@
   }
   
   select{
-    text-align-last: center;
+    text-align: -webkit-center;
     -moz-text-align-last: center;
-    -webkit-text-align-last: center;
   }
+  
   .backorder-prediction-result{
     font-size: 2.2rem;
   }
@@ -173,6 +173,8 @@
 
   select{
     width: 25rem;
+    text-align: -webkit-center;
+    -moz-text-align-last: center;
   }
 
   .submit-btn{
@@ -277,6 +279,8 @@
   select{
     width: 20rem;
     font-size: 1.2rem;
+    text-align: -webkit-center;
+    -moz-text-align-last: center;
   }
 
 
@@ -310,6 +314,11 @@
     font-size: 1.2rem !important;
     height: 3.0rem;
     width: 10rem;
+  }
+  
+  select{
+    text-align: -webkit-center;
+    -moz-text-align-last: center;
   }
   
   .increase-width{
