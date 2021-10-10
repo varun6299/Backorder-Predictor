@@ -173,9 +173,6 @@
 
   select{
     width: 25rem;
-    text-align-last: center !important;
-    -moz-text-align-last: center;
-    -webkit-text-align-last: center !important;
   }
 
   .submit-btn{
@@ -280,9 +277,6 @@
   select{
     width: 20rem;
     font-size: 1.2rem;
-    text-align-last: center !important;
-    -moz-text-align-last: center;
-    -webkit-text-align-last: center !important;
   }
 
 
@@ -318,12 +312,6 @@
     width: 10rem;
   }
   
-  select{
-    text-align-last: center !important;
-    -moz-text-align-last: center;
-    -webkit-text-align-last: center !important;
-  }
-
   .increase-width{
     width: 10rem !important;
   }
