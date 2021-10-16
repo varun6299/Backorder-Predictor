@@ -67,11 +67,11 @@ def Results():
 
         else:
             result = "A Backorder"
-        with open("Logging/Logging.txt","a") as logger:
+        with open("Logging.txt","a") as logger:
             date = str(datetime.datetime.fromtimestamp(round(datetime.datetime.utcnow().timestamp())))
             logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
     except BaseException as logger:
-        with open("Logging/Logging.txt","a") as logger:
+        with open("Logging.txt","a") as logger:
             date = str(datetime.datetime.fromtimestamp(round(datetime.datetime.utcnow().timestamp())))
             logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
             
