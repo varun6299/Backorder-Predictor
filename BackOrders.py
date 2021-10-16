@@ -4,6 +4,7 @@ import pickle
 import pandas as pd
 import os
 import datetime
+from dateutil.tz import gettz
 from sklearn.ensemble import RandomForestClassifier
 
 app = Flask(__name__,template_folder="Template",static_folder="Static")
@@ -68,13 +69,15 @@ def Results():
         else:
             result = "A Backorder"
         with open("Logging.txt","a") as logger:
-            date = str(datetime.datetime.fromtimestamp(round(datetime.datetime.utcnow().timestamp())))
-            logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
-    except BaseException as logger:
-        with open("Logging.txt","a") as logger:
-            date = str(datetime.datetime.fromtimestamp(round(datetime.datetime.utcnow().timestamp())))
+            dtobj = datetime.datetime.now(tz=gettz('Asia/Kolkata'))
+            date = str(datetime.datetime.fromtimestamp(round(dtobj.timestamp())))
             logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
             
+    except BaseException as logger:
+        with open("Logging.txt","a") as logger:
+            dtobj = datetime.datetime.now(tz=gettz('Asia/Kolkata'))
+            date = str(datetime.datetime.fromtimestamp(round(dtobj.timestamp())))
+            logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
     return render_template("Results.html",result=result)
 
 
