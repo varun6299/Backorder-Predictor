@@ -3,6 +3,7 @@ import numpy as np
 import pickle
 import pandas as pd
 import os
+import datetime
 from sklearn.ensemble import RandomForestClassifier
 
 app = Flask(__name__,template_folder="Template",static_folder="Static")
@@ -57,12 +58,23 @@ def Results():
     arr = np.append(arr,num_arr_2)
     arr = np.append(arr,ppap_risk)
     result = model.predict(arr.reshape(1,-1))
+    
+    try:
+        result = model.predict(arr.reshape(1,-1))
 
-    if result == 0:
-        result = "Not a Backorder"
+        if result == 0:
+            result = "Not a Backorder"
 
-    else:
-        result = "A Backorder"
+        else:
+            result = "A Backorder"
+        with open("Logging.txt","a") as logger:
+            date = str(datetime.datetime.fromtimestamp(round(datetime.datetime.utcnow().timestamp())))
+            logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
+    except BaseException as logger:
+        with open("Logging.txt","a") as logger:
+            date = str(datetime.datetime.fromtimestamp(round(datetime.datetime.utcnow().timestamp())))
+            logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
+            
     return render_template("Results.html",result=result)
 
 
