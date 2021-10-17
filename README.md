@@ -41,7 +41,7 @@ In order to build the model for predicting which products would go into backorde
 
 
 ### User Interface Creation - 
-![predictor](Static/GitHubImages/Predictor.png)
+![predictor](Static/GitHubImages/predictor.png)
 
 ![results](Static/GitHubImages/ResultsSection.png)
 
