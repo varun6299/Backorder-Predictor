@@ -41,7 +41,9 @@ In order to build the model for predicting which products would go into backorde
 
 
 ### User Interface Creation - 
-![predictor](Static/GitHubImages/predictor.png)
+![predictor](Static/GitHubImages/Predictor.png)
+
+![results](Static/GitHubImages/ResultsSection.png)
 
 In order to build user interface to allow users to use the model on the web, HTML was used to create a webpage, involving a brief overview of backorders and a predictor form. To style the page, CSS was applied and additional animations like scrolling and floating navigation bar was added using Javascript.
 
