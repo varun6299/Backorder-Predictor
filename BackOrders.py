@@ -22,6 +22,7 @@ def Results():
         forecast_6_month = float(request.args.get("forecast_6_month"))
         sales_prev_6_month = float(request.args.get("sales_prev_6_month"))
         past_6_month_perf = float(request.args.get("past_6_month_perf"))
+        past_6_month_perf = past_6_month_perf / 100
         national_inv = int(request.args.get("national_inv"))
         in_transit = int(request.args.get("in_transit"))
         local_bo_qty = int(request.args.get("local_bo_qty"))
