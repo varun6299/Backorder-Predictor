@@ -56,14 +56,14 @@ def Results():
         else:
             result = "A Backorder"
 
-        with open("Static/Logging/Logging.txt","a") as logger:
+        with open("Logging/Logging.txt","a") as logger:
             dtobj = datetime.datetime.now(tz=gettz('Asia/Kolkata'))
             date = str(datetime.datetime.fromtimestamp(round(dtobj.timestamp())))
             logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
 
 
     except BaseException as logger:
-        with open("Static/Logging/Logging.txt","a") as logger_file:
+        with open("Logging/Logging.txt","a") as logger_file:
             dtobj = datetime.datetime.now(tz=gettz('Asia/Kolkata'))
             date = str(datetime.datetime.fromtimestamp(round(dtobj.timestamp())))
             logger_file.write(f"{date} ERROR : {logger}")
