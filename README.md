@@ -56,6 +56,11 @@ In order to deploy the application on the web, the files were pushed to github. 
 In order to deploy the application on the web, AWS Ec2 instance was created usng Ubuntu as virtual machine. Also involved use of software like Putty, Puttygen and Winscp
 
 ## Link to Website - 
-Click the following link to use app: 
+Click the following link to use app deployed using HEROKU: 
 ### https://backorder-predictor.herokuapp.com/
+
+Click the following link to use app hosted using AWS EC2:
+http://ec2-3-109-213-4.ap-south-1.compute.amazonaws.com:8080/
+
+
 
