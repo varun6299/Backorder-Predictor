@@ -74,10 +74,10 @@ def Results():
             logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
             
     except BaseException as logger:
-        with open("Logging.txt","a") as logger:
+        with open("Logging.txt","a") as logger_file:
             dtobj = datetime.datetime.now(tz=gettz('Asia/Kolkata'))
             date = str(datetime.datetime.fromtimestamp(round(dtobj.timestamp())))
-            logger.write(f"{date} INFO-Prediction successful. Prediction made: {result}\n")
+            logger_file.write(f"{date} ERROR {logger}-Error has occured")
     return render_template("Results.html",result=result)
 
 
