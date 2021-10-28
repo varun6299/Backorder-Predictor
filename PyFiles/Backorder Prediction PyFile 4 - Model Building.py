@@ -17,7 +17,7 @@ ytest.drop(["Unnamed: 0"],axis=1,inplace=True)
 from sklearn.preprocessing import StandardScaler
 
 
-## Building ML Models
+## Building Baseline ML Models
 
 logger.info("Building Baseline")
 
