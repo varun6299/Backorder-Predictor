@@ -61,6 +61,7 @@ Click the following link to use app deployed using HEROKU:
 
 Click the following link to use app hosted using AWS EC2:
 ### http://ec2-3-109-213-4.ap-south-1.compute.amazonaws.com:8080/
+(NOTE - The ec2 instance of backorder predictor app has been stopped for cost purposes. Kindly use heroku app link)
 
 
 
